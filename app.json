@@ -1,0 +1,7 @@
+{
+    "name": "Scheduler API",
+    "description": "This API serves up mock student data from static JSON files.",
+    "repository": "https://github.com/axu8/schedulerAPI.git/",
+    "keywords": ["scheduler", "express", "heroku","node"]
+  }
+  
