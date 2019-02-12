@@ -1,6 +1,4 @@
 const express = require('express');
-const students = require('./data/students.json');
-const schedule = require('./data/degreeSchedule.json');
 
 const fs = require('fs');
 
@@ -15,17 +13,18 @@ app.get('/', function(req, res){
     res.sendFile(__dirname + '/index.html');
 });
 
-// app.get('/students', function(req, res){
-//     fs.readFile('student.json', (err, data) => {  
-//         if (err) throw err;
-//         let student = JSON.parse(data);
-//         console.log(student);
-//     });
-//     res.send(students);
-// });
-// app.get('/schedule', function(req, res){
-//     res.send(schedule);
-// });
+app.get('/students', function(req, res){
+    fs.readFile('./data/students.json', (err, data) => {  
+        if (err) throw err;
+        res.send(JSON.parse(data));
+    });
+});
+app.get('/schedule', function(req, res){
+    fs.readFile('./data/degreeSchedule.json', (err, data) => {  
+        if (err) throw err;
+        res.send(JSON.parse(data));
+    });
+});
 
 // app.get('/about', function(req, res){
 //     res.sendFile(__dirname + '/pages/about.html');
