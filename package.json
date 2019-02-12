@@ -1,0 +1,22 @@
+{
+  "name": "scheduler",
+  "version": "1.0.0",
+  "description": "Test API for Scheduling App Prototype",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axu8/schedulerAPI.git"
+  },
+  "author": "Paul Edoho-Eket",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/axu8/schedulerAPI/issues"
+  },
+  "homepage": "https://github.com/axu8/schedulerAPI#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
